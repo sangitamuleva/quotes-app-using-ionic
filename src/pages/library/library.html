@@ -1,0 +1,20 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Quotes Library</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<h3 text-center>Select your favorite Quote</h3>
+  <ion-list>
+    <button ion-item 
+      *ngFor="let allquotes of quotesCollection"
+      [navPush]="quotesPage" 
+      [navParams]="allquotes">
+        <ion-icon [name]="allquotes.icon" item-left> </ion-icon>
+        <h2>{{allquotes.category| uppercase}}</h2>
+        <p>{{allquotes.quotes.length}}</p>
+    </button>
+  </ion-list>
+</ion-content>
