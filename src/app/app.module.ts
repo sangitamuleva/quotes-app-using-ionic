@@ -29,7 +29,7 @@ import { QuotesService } from '../services/quotes';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+   MyApp,
    FavoritesPage,
    LibraryPage,
    QuotePage,

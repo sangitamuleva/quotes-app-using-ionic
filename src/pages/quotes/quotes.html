@@ -1,16 +1,16 @@
 
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="quoteBackground" text-left>
     <ion-title>{{allquotes.category|uppercase}}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <ion-card *ngFor="let quote of allquotes.quotes; let i=index">
+    <ion-card  *ngFor="let quote of allquotes.quotes; let i=index">
         <ion-card-header>
            #{{i+1}}
         </ion-card-header>
-        <ion-card-content>
+        <ion-card-content color="maintheme">
             <p>{{quote.text}}</p>
             <p class='author'>{{quote.person}}</p>
         </ion-card-content>

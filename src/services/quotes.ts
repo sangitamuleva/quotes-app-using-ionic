@@ -13,7 +13,7 @@ export class QuotesService{
     removeQuoteToFav(q:Quote){
         const position=this.favquote.findIndex((q1:Quote)=>{
             return q1.id==q.id;
-        })
+        });
         this.favquote.splice(position,1); //get postion and splice one element
 
     }

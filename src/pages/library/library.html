@@ -1,14 +1,15 @@
 
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="quoteBackground" text-left >
     <ion-title>Quotes Library</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-<h3 text-center>Select your favorite Quote</h3>
-  <ion-list>
-    <button ion-item 
+<ion-content  padding  class="bg">
+  <hr>
+
+  <ion-list color="maintheme">
+    <button ion-item color="maintheme"
       *ngFor="let allquotes of quotesCollection"
       [navPush]="quotesPage" 
       [navParams]="allquotes">
